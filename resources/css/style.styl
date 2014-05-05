@@ -1,0 +1,318 @@
+@import 'jeet'
+
+// VARIABLES
+// edit()
+scale = 0 400px 600px 800px 1140px
+
+dbp = 1140px
+tbp = 799px
+pbp = 680px
+mbp = 500px
+xmbp = 350px
+
+lt-green = #27ae60
+green = #1ea557
+orange = #fc6e51
+red = #e74c3c
+black = #111111
+blackr = #000000
+
+b-ts = 1px 1px 0 rgba(0, 0, 0, 0.25)
+w-ts = 1px 1px 0 rgba(255, 255, 255, 0.25)
+
+dkr-gray = #262626
+dk-gray = #2a2a2a
+
+lt-gray = #ababab
+ltr-gray = #eeeeee
+ltrr-gray = #f3f3f3
+ltrrr-gray = #f9f9f9
+
+transition = color 0.25s, background 0.25s
+//   -webkit-transition: color 0.25s, background 0.25s
+//      -moz-transition: color 0.25s, background 0.25s
+//        -o-transition: color 0.25s, background 0.25s
+//       -ms-transition: color 0.25s, background 0.25s
+//           transition: color 0.25s, background 0.25s
+
+// html
+//   +below(tbp)
+//     background: red
+
+body
+  margin: 0
+  color: dkr-gray
+  font-size: 16px
+  font-weight: 300
+  text-shadow: w-ts
+  font-family: 'Roboto', arial, sans-serif;
+
+header
+  section
+    padding: 16px 20px
+    border-top: 2px solid black
+    background: lt-green
+    border-bottom: 4px solid green;
+    span
+      col(1/2)
+    .logo
+      background:url('../../img/logo.png') no-repeat center center
+      height: 65px
+      width: 59px
+      +below(tbp)
+        background:url('../../img/logo-small.png') no-repeat center center
+        height: 50px
+        width: 45px
+    span.menu
+      text-align: right
+      padding: 15px 0
+      display: none
+      +below(tbp)
+        display: block
+      a
+        color: white
+        background: black
+        padding: 10px 18px
+        border: 2px solid dk-gray
+        border-radius: 4px
+  nav
+    border-top: 4px solid dkr-gray
+    background: dk-gray
+    text-shadow: b-ts
+    ul
+      center(dbp)
+      list-style: none
+      margin-top: 0
+      margin-bottom: 0
+      li
+        text-align: center
+        +below(tbp)
+          display: none
+        a
+          span(1/5)
+          padding: 20px 0 24px 0
+          color: lt-gray
+          font-weight: bold
+          text-transform: uppercase
+          +below(tbp)
+            span(1/3)
+          +below(mbp)
+            span(1/2)
+          +below(xmbp)
+            stack()
+        a:hover
+          color: white
+        .active
+          background: dkr-gray
+          color: white
+
+// HOME
+.main-section
+  h1
+    margin-top: 10px
+    +below(mbp)
+      margin-top: 0
+  h1,h2
+    text-align: center
+  div
+    margin-top: 40px
+    +below(mbp)
+      margin-top: 0
+  span
+    col(1/4)
+    shift(3/4)
+    text-align: right
+    +below(tbp)
+      col(1/3)
+      shift(2/3)
+      text-align: center
+    +below(mbp)
+      stack()
+      unshift()
+  p
+    col(3/4)
+    shift(-1/4)
+    margin: 0
+    +below(tbp)
+      col(2/3)
+      shift(-1/3)
+    +below(mbp)
+      stack()
+      unshift()
+      margin: 10px 0 0 0
+.alex
+  border-radius: 10px
+  +below(mbp)
+    max-width: 200px
+    margin: 10px 0
+
+// PORTFOLIO
+.portfolio
+  background: ltrrr-gray
+  div
+    margin-top: 20px
+    margin-bottom: 30px
+    +below(pbp)
+      margin-top: 10px
+      margin-bottom: 40px
+    article
+      col(3/5)
+      background: ltr-gray
+      padding: 20px
+      box-sizing: border-box
+      border-radius: 4px
+      +below(pbp)
+        stack()
+    aside
+      col(2/5)
+      +below(pbp)
+        stack()
+  :nth-child(3)
+    display: none
+  // :last-child
+  //   margin-top: 0
+  //   margin-bottom: 0
+
+// ABOUT
+.about
+  background: orange
+
+// BASIC STYLES
+a
+  color: green
+  text-decoration: none
+  transition: transition
+
+a:hover
+  color: dk-gray
+
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 10px 0
+  font-family: Bitter, serif; /*Oxygen*/
+  font-weight: normal;
+h1
+  font-size: 3rem
+  +below(tbp)
+    font-size: 2.4rem
+  +below(mbp)
+    font-size: 1.8rem
+h2
+  font-size: 2.4rem
+  +below(tbp)
+    font-size: 1.8rem
+  +below(mbp)
+    font-size: 1.4rem
+h3, .sm
+  font-size: 1.8rem
+  +below(tbp)
+    font-size: 1.4rem
+  +below(mbp)
+    font-size: 1.2rem
+h4, .xsm
+  font-size: 1.6rem
+  +below(tbp)
+    font-size: 1.3rem
+  +below(mbp)
+    font-size: 1.1rem
+h5, .xxsm, p
+  font-size: 1.3rem
+  +below(tbp)
+    font-size: 1.1rem
+  +below(mbp)
+    font-size: 1rem
+.p
+  padding: 30px 0
+
+.container
+  padding: 30px 20px
+  +below(tbp)
+    padding: 20px 30px
+  +below(mbp)
+    padding: 20px 20px
+  +below(xmbp)
+    padding: 20px 10px
+
+.contained
+  center(dbp)
+
+.center
+  text-align: center
+
+.hidden
+  display: none
+
+.toggle
+  border: 2px solid ltr-gray
+  background: ltrrr-gray
+  border-radius: 4px
+  +below(xmbp)
+    font-size: .8rem
+  a
+    span(1/2)
+    color: black
+    font-weight: bold
+    text-align: center
+    padding: 20px 0
+    box-sizing: border-box
+    border-radius: 4px
+  .active
+    color: white
+    text-shadow: b-ts
+    padding: 20px
+    border: 2px solid ltrr-gray
+    background: dk-gray
+
+img
+  max-width: 100%
+
+// BUTTONS
+.more
+  background: ltr-gray
+  text-align: center
+  display: block
+  padding: 15px 0
+  border-radius: 4px
+  // :hover
+  //   background: ltrr-gray
+  // :focus, :active
+  //   background: ltr-gray
+
+.fa-external-link
+  font-size: .8rem
+  margin-left: 4px
+
+// FOOTER
+footer
+  border-top: 4px solid ltrrr-gray
+  background: ltrr-gray
+  +below(tbp)
+    span:nth-child(2)
+      display: none
+    span:last-child
+      margin-bottom: 10px
+  span:first-child a
+    color: black
+  span:first-child a:hover
+    color: lt-gray
+  span
+    col(1/2, cycle:2)
+    text-align: center
+    margin: 2.5px 0
+    +below(tbp)
+      stack()
+      margin: 10px 0 0 0
+
+// FOOTER COLORS
+// .fa-html5
+//   color: red
+.twitter-blue
+  color: #00acee
+.linkedin-blue
+  color: #1b86bc
+.facebook-blue
+  color: #3b579d
+.google-red
+  color: #dd4b39
+.youtube-red
+  color: #c9312c
+// edit()
