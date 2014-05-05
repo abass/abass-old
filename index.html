@@ -1,10 +1,133 @@
-<!DOCTYPE html>
 <html>
+  <!-- INTERNET EXPLORER FIX -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
   <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="utf-8">
+    <!-- TITLE/DESC/KEYWORDS -->
+    <title>Alex Bass | Front-End Developer &amp; UI/UX Designer</title>
+    <meta name="description" content="Alex Bass, President of CyberBytes Inc. based out of Buffalo New York. Specialized in Website Design and BlackBerry 10 App Development.">
+    <meta name="author" content="Alex Bass">
+
+    <!-- STYLES -->
+    <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700%7CRoboto:300italic,300,400,600,700' rel='stylesheet' type='text/css'><!-- <link href='//fonts.googleapis.com/css?family=Bitter:400,700%7CRoboto:300italic,300,400,600,700' rel='stylesheet' type='text/css'> -->
   </head>
   <body>
-    
+    <!-- HEADER -->
+    <header>
+      <section>
+        <div class="contained">
+          <span>
+            <a href="/"><img src="img/clear.gif" class="logo" alt="Alex Bass"></a>
+          </span>
+          <span class="menu">
+            <a href="#">MENU</a>
+          </span>
+        </div>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="http://www.cyberbytesinc.com/blog" class="external">Blog <i class="fa fa-external-link"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="container">
+      <div class="contained main-section">
+        <h1>Alex Bass</h1>
+        <h2>Designer // Developer</h2>
+        <div>
+          <span><img src="img/alex.jpg" class="alex" alt="Alex Bass"></span>
+          <p class="xsm">Hello! I'm Alex Bass, a 22 year old Front-End Developer &amp; UI/UX Designer from Buffalo, New York. I am the Co-Founder of <a href="http://www.cyberbytesinc.com">CyberBytes Inc.</a> and I make <a href="http://www.cyberbytesinc.com/portfolio/web-design-cheat-sheet">BlackBerry 10 Apps</a> in my spare time. I eat, sleep, and breathe code; have a keen eye for detail; and always strive to be pixel perfect.<br><br><strong><i>Check out some of my work below!</i></strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOGGLE -->
+    <section class="container">
+      <div class="contained toggle">
+        <a href="#" class="active">Website Design</a>
+        <a href="#" class="">App Development</a>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <!-- WEBSITE DESIGN -->
+    <section id="1" class="container portfolio">
+      <div class="contained">
+        <aside><img src="img/portfolio/cb.png" alt="CyberBytes Inc."></aside>
+        <article>
+          <h3>CyberBytes Inc. - <a href="http://www.cyberbytesinc.com">Visit Site</a></h2>
+          <p class="xxsm">This is the site that I made for my company. I focused a lot of importance on making it as mobile-friendly as possible. I tried to show the power of our services through the functionality of the website so it sells itself.</p>
+        </article>
+      </div>
+      <div class="contained">
+        <aside><img src="img/portfolio/ama.png" alt="American Marketing Association"></aside>
+        <article>
+          <h3>Canisius College AMA - <a href="http://www.canisiusama.com">Visit Site</a></h2>
+          <p>I focused on creating a fairly flat user-interface to allow for content and images to be the main focal point on each page. They needed this site to help inform students of the organization while giving them useful information to show students why it would be beneficial for them to join.</p>
+        </article>
+      </div>
+      <div class="contained">
+        <aside><img src="img/portfolio/rac.png" alt="RAC-Engineering"></aside>
+        <article>
+          <h3>RAC-Engineering - <a href="http://www.rac-engineering.com">Visit Site</a></h2>
+          <p>This site is currently under construction. It will be updated here upon completion. Feel free to check out the site in it's current form.</p>
+        </article>
+      </div>
+      <div class="contained"><a href="#" class="more">View More</a></div>
+    </section>
+
+    <!-- APP DEVELOPMENT -->
+    <section id="2" class="container portfolio hidden"></section>
+
+    <!-- ABOUT -->
+    <section><h2>About</h2></section>
+    <!-- <section class="container about">
+      <div class="contained">
+        <aside><img src="img/portfolio/cb.png" alt="CyberBytes Inc."></aside>
+        <article>
+          <h3>CyberBytes Inc. - <a href="http://www.cyberbytesinc.com">Visit Site</a></h2>
+          <p class="xxsm">This is the site that I made for my company. I focused a lot of importance on making it as mobile-friendly as possible. I tried to show the power of our services through the functionality of the website so it sells itself.</p>
+        </article>
+      </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <div class="contained">
+        <span><i class="fa fa-angle-left"></i> <a href="http://www.cyberbytesinc.com">CyberBytes Inc.</a> &copy; 2014 <i class="fa fa-angle-right"></i></span>
+        <span><i class="fa fa-angle-left"></i> Social Channels <i class="fa fa-angle-right"></i></span>
+        <span>
+          <a href="http://validator.w3.org/check?uri=http://abass.co/" rel="nofollow"><i class="fa fa-html5"></i></a> // 
+          <a href="#">About</a> // 
+          <a href="#">Portfolio</a> // 
+          <a href="#">Contact</a> // 
+          <a href="http://www.cyberbytesinc.com/blog">Blog <i class="fa fa-external-link"></i></a>
+        </span>
+        <span>
+          <a href="https://twitter.com/Flip4Bytes" class="twitter-blue">Twitter / </a>
+          <a href="https://www.linkedin.com/in/flip4bytes" class="linkedin-blue">LinkedIn / </a>
+          <a href="https://www.facebook.com/Flip4Life" class="facebook-blue">Facebook / </a>
+          <a href="https://plus.google.com/114533524603904902096/" rel="publisher" class="google-red">Google+ / </a>
+          <a href="https://www.youtube.com/user/Flip4Bytes" class="youtube-red">YouTube</a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="resources/js/custom.js"></script><!-- CUSTOM -->
   </body>
 </html>
