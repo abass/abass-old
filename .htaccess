@@ -1,0 +1,67 @@
+Options +Indexes
+
+#Leverage browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+    <FilesMatch "\.(bmp|css|flv|gif|ico|jpg|jpeg|js|pdf|png|svg|swf|tif|tiff)$">
+        Header set Last-Modified "Sun, 30 Jun 2010 00:00:00 GMT"
+    </FilesMatch>
+</IfModule>
+
+#REMOVED
+# Cache images/pdf docs for 10 days
+#<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
+#  Header set Cache-Control "max-age=864000, public, must-revalidate"
+#  Header unset Last-Modified
+#</FilesMatch>
+
+# cache other stuff for 10 days
+#<FilesMatch "\.(html|htm|xml|txt|xsl|css|js)$">
+#  Header set Cache-Control "max-age=864000, must-revalidate"
+#</FilesMatch>
+#END REMOVED
+
+# Compression
+<FilesMatch "\.(css|js|xhtml|html|htm|php)$">
+    SetOutputFilter DEFLATE
+</FilesMatch>
+
+# Error 404 Pages
+ErrorDocument 400 /404.php
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+# index.php [301 redirect]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#RewriteBase /
+#RewriteRule ^(.*)\.html$ $1.php [R=301,L]
+
+# REMOVE FILE EXTENSIONS
+RewriteEngine On
+# browser requests PHP
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+# check to see if the request is for a PHP file
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^/?(.*)$ /$1.php [L]
+
+# www.abass.co to abass.co [301 redirect]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} http://www.abass.co/
+RewriteRule (.*) ^abass.co$1 [R=301,L]
+
+#301 Redirects
+redirect 301 /home /
+
+# Denies Access to File Structure
+Options -Indexes
