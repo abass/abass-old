@@ -1,3 +1,7 @@
+* {
+  background: #eee;
+  background: rgba(0,0,0,0.05);
+}
 body {
   margin: 0;
   color: #262626;
@@ -577,7 +581,6 @@ header nav ul li .active {
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  padding-left: 10px;
   box-sizing: border-box;
   margin: 15px 0;
 }
@@ -589,8 +592,9 @@ header nav ul li .active {
 .about article > div:after {
   clear: both;
 }
-.about article > div:last-child {
+.about article > div:nth-child(2n) {
   margin-right: 0%;
+  float: right;
 }
 @media only screen and (max-width: 799px) {
   .about article > div {
@@ -612,6 +616,10 @@ header nav ul li .active {
   }
   .about article > div:after {
     clear: both;
+  }
+  .about article > div:nth-child(2n) {
+    margin-right: 3%;
+    float: left;
   }
   .about article > div:nth-child(3n) {
     margin-right: 0%;
@@ -639,6 +647,10 @@ header nav ul li .active {
   .about article > div:after {
     clear: both;
   }
+  .about article > div:nth-child(3n) {
+    margin-right: 3%;
+    float: left;
+  }
   .about article > div:nth-child(2n) {
     margin-right: 0%;
     float: right;
@@ -657,6 +669,7 @@ header nav ul li .active {
     margin-left: 0%;
     margin-right: 3%;
     margin: 5px 0;
+    padding: 0 20px;
   }
   .about article > div:before,
   .about article > div:after {
@@ -666,9 +679,12 @@ header nav ul li .active {
   .about article > div:after {
     clear: both;
   }
-  .about article > div:nth-child(1n) {
+  .about article > div:nth-child(2n) {
+    margin-right: 3%;
+    float: left;
+  }
+  .about article > div:last-child {
     margin-right: 0%;
-    float: right;
   }
 }
 .about article > div > h3 {
@@ -695,6 +711,11 @@ header nav ul li .active {
 .about article > div ul {
   list-style: none;
   padding-left: 20px;
+}
+@media only screen and (max-width: 799px) {
+  .about article > div ul {
+    padding-left: 10px;
+  }
 }
 .about article > div li {
   border-left: 3px solid #425f7a;
