@@ -35,13 +35,14 @@ header section span:after {
 header section span:last-child {
   margin-right: 0%;
 }
-header section .logo {
+header section span .logo {
   background: url("../../img/logo.png") no-repeat center center;
+  float: left;
   height: 65px;
   width: 59px;
 }
 @media only screen and (max-width: 799px) {
-  header section .logo {
+  header section span .logo {
     background: url("../../img/logo-small.png") no-repeat center center;
     height: 50px;
     width: 45px;
@@ -462,7 +463,41 @@ header nav ul li .active {
   display: none;
 }
 .about {
-  background: #fc6e51;
+  background: #34495e;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+}
+.about div > div {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.3333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  border-left: 4px solid #262626;
+  padding-left: 10px;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+.about div > div:before,
+.about div > div:after {
+  content: '';
+  display: table;
+}
+.about div > div:after {
+  clear: both;
+}
+.about div > div:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.about div > div h3 {
+  color: #2a2a2a;
+  text-transform: uppercase;
 }
 a {
   color: #1ea557;
@@ -471,6 +506,9 @@ a {
 }
 a:hover {
   color: #2a2a2a;
+}
+p {
+  margin: 0 0 15px 0;
 }
 h1,
 h2,
@@ -543,20 +581,23 @@ h4,
 }
 h5,
 .xxsm,
-p {
+p,
+span {
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 799px) {
   h5,
   .xxsm,
-  p {
+  p,
+  span {
     font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 500px) {
   h5,
   .xxsm,
-  p {
+  p,
+  span {
     font-size: 1rem;
   }
 }
@@ -724,18 +765,21 @@ footer span:nth-child(2n) {
     margin-right: auto;
   }
 }
-.twitter-blue {
+.github-color {
+  color: #333;
+}
+.twitter-color {
   color: #00acee;
 }
-.linkedin-blue {
+.linkedin-color {
   color: #1b86bc;
 }
-.facebook-blue {
+.facebook-color {
   color: #3b579d;
 }
-.google-red {
+.google-color {
   color: #dd4b39;
 }
-.youtube-red {
+.youtube-color {
   color: #c9312c;
 }

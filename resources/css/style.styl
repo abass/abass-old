@@ -12,6 +12,7 @@ xmbp = 350px
 
 lt-green = #27ae60
 green = #1ea557
+dk-blue = #34495e
 orange = #fc6e51
 red = #e74c3c
 black = #111111
@@ -19,14 +20,16 @@ blackr = #000000
 
 b-ts = 1px 1px 0 rgba(0, 0, 0, 0.25)
 w-ts = 1px 1px 0 rgba(255, 255, 255, 0.25)
+// w-ts-o = 2px 2px 0 rgba(255, 255, 255, 0.25)
 
 dkr-gray = #262626
 dk-gray = #2a2a2a
 
 lt-gray = #ababab
-ltr-gray = #eeeeee
-ltrr-gray = #f3f3f3
-ltrrr-gray = #f9f9f9
+ltr-gray = #dddddd
+ltrr-gray = #eeeeee
+ltrrr-gray = #f3f3f3
+ltrrrr-gray = #f9f9f9
 
 transition = color 0.25s, background 0.25s
 //   -webkit-transition: color 0.25s, background 0.25s
@@ -55,14 +58,15 @@ header
     border-bottom: 4px solid green;
     span
       col(1/2)
-    .logo
-      background:url('../../img/logo.png') no-repeat center center
-      height: 65px
-      width: 59px
-      +below(tbp)
-        background:url('../../img/logo-small.png') no-repeat center center
-        height: 50px
-        width: 45px
+      .logo
+        background:url('../../img/logo.png') no-repeat center center
+        float: left
+        height: 65px
+        width: 59px
+        +below(tbp)
+          background:url('../../img/logo-small.png') no-repeat center center
+          height: 50px
+          width: 45px
     span.menu
       text-align: right
       padding: 15px 0
@@ -148,7 +152,7 @@ header
 
 // PORTFOLIO
 .portfolio
-  background: ltrrr-gray
+  background: ltrrrr-gray
   div
     margin-top: 20px
     margin-bottom: 30px
@@ -157,7 +161,7 @@ header
       margin-bottom: 40px
     article
       col(3/5)
-      background: ltr-gray
+      background: ltrr-gray
       padding: 20px
       box-sizing: border-box
       border-radius: 4px
@@ -175,7 +179,19 @@ header
 
 // ABOUT
 .about
-  background: orange
+  background: dk-blue
+  color: white
+  text-shadow: b-ts
+  div > div
+    col(1/3, cycle: 3)
+    border-left: 4px solid dkr-gray
+    padding-left: 10px
+    box-sizing: border-box
+    margin: 15px 0
+  div > div h3
+    color: dk-gray
+
+    text-transform: uppercase
 
 // BASIC STYLES
 a
@@ -185,6 +201,9 @@ a
 
 a:hover
   color: dk-gray
+
+p
+  margin: 0 0 15px 0
 
 h1, h2, h3, h4, h5, h6
   margin: 0 0 10px 0
@@ -214,7 +233,7 @@ h4, .xsm
     font-size: 1.3rem
   +below(mbp)
     font-size: 1.1rem
-h5, .xxsm, p
+h5, .xxsm, p, span
   font-size: 1.3rem
   +below(tbp)
     font-size: 1.1rem
@@ -242,8 +261,8 @@ h5, .xxsm, p
   display: none
 
 .toggle
-  border: 2px solid ltr-gray
-  background: ltrrr-gray
+  border: 2px solid ltrr-gray
+  background: ltrrrr-gray
   border-radius: 4px
   +below(xmbp)
     font-size: .8rem
@@ -259,7 +278,7 @@ h5, .xxsm, p
     color: white
     text-shadow: b-ts
     padding: 20px
-    border: 2px solid ltrr-gray
+    border: 2px solid ltrrr-gray
     background: dk-gray
 
 img
@@ -267,15 +286,15 @@ img
 
 // BUTTONS
 .more
-  background: ltr-gray
+  background: ltrr-gray
   text-align: center
   display: block
   padding: 15px 0
   border-radius: 4px
   // :hover
-  //   background: ltrr-gray
+  //   background: ltrrr-gray
   // :focus, :active
-  //   background: ltr-gray
+  //   background: ltrr-gray
 
 .fa-external-link
   font-size: .8rem
@@ -283,8 +302,8 @@ img
 
 // FOOTER
 footer
-  border-top: 4px solid ltrrr-gray
-  background: ltrr-gray
+  border-top: 4px solid ltrrrr-gray
+  background: ltrrr-gray
   +below(tbp)
     span:nth-child(2)
       display: none
@@ -305,14 +324,16 @@ footer
 // FOOTER COLORS
 // .fa-html5
 //   color: red
-.twitter-blue
+.github-color
+  color: #333333
+.twitter-color
   color: #00acee
-.linkedin-blue
+.linkedin-color
   color: #1b86bc
-.facebook-blue
+.facebook-color
   color: #3b579d
-.google-red
+.google-color
   color: #dd4b39
-.youtube-red
+.youtube-color
   color: #c9312c
 // edit()
