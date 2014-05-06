@@ -12,9 +12,21 @@ xmbp = 350px
 
 lt-green = #27ae60
 green = #1ea557
-dk-blue = #34495e
+
+// 7, 11, 14
+ltrrr-blue = rgba(80, 117, 150, 1.0)
+ltrr-blue = rgba(73, 106, 136, 1.0)
+ltr-blue = rgba(66, 95, 122, 1.0)
+lt-blue = rgba(59, 84, 108, 1.0)
+blue = #34495e
+dk-blue = #2c3e50
+
 orange = #fc6e51
+dk-orange = #e7522a
+
 red = #e74c3c
+dk-red = #c0392b
+
 black = #111111
 blackr = #000000
 
@@ -22,14 +34,14 @@ b-ts = 1px 1px 0 rgba(0, 0, 0, 0.25)
 w-ts = 1px 1px 0 rgba(255, 255, 255, 0.25)
 // w-ts-o = 2px 2px 0 rgba(255, 255, 255, 0.25)
 
-dkr-gray = #262626
-dk-gray = #2a2a2a
-
-lt-gray = #ababab
-ltr-gray = #dddddd
-ltrr-gray = #eeeeee
-ltrrr-gray = #f3f3f3
 ltrrrr-gray = #f9f9f9
+ltrrr-gray = #f3f3f3
+ltrr-gray = #eeeeee
+ltr-gray = #dddddd
+lt-gray = #ababab
+gray = #333333
+dk-gray = #2a2a2a
+dkr-gray = #262626
 
 transition = color 0.25s, background 0.25s
 //   -webkit-transition: color 0.25s, background 0.25s
@@ -179,19 +191,71 @@ header
 
 // ABOUT
 .about
-  background: dk-blue
+  background: blue
+  border-top: 4px solid ltr-blue
+  border-bottom: 4px solid ltr-blue
   color: white
   text-shadow: b-ts
-  div > div
-    col(1/3, cycle: 3)
-    border-left: 4px solid dkr-gray
+  aside
+    col(1/3)
+    +below(xmbp)
+      col(3/3)
+      margin: 10px 0 20px 0
+  article
+    col(2/3)
+    +below(tbp)
+      col(3/3)
+  article > div
+    col(1/2)
+    // border-left: 4px solid dkr-gray
     padding-left: 10px
     box-sizing: border-box
     margin: 15px 0
-  div > div h3
-    color: dk-gray
-
+    +below(tbp)
+      col(1/3, cycle: 3)
+    +below(pbp)
+      col(1/2, cycle: 2)
+    +below(xmbp)
+      col(2/2, cycle: 1)
+      margin: 5px 0
+  article > div > h3
+    color: ltrrr-blue
+    text-shadow: b-ts
     text-transform: uppercase
+    font-weight: bold
+    margin-bottom: 5px
+  article > div > span
+    font-weight: bold
+    font-size: 1.4em
+    +below(tbp)
+      font-size: 1.1em
+    +below(mbp)
+      font-size: 1em
+  article > div ul
+    list-style: none
+    padding-left: 20px
+  article > div li
+    border-left: 3px solid ltr-blue
+    padding-left: 8px
+    margin: 5px 0
+  article > div a
+    font-weight: bold
+    +below(tbp)
+      font-weight: normal
+
+.portrait
+  background:url('../../img/alex-portrait.png') no-repeat center center
+  height: 620px
+  width: 100%
+  +below(tbp)
+    display: none
+    height: 0
+    width: 0
+  +below(xmbp)
+    display: block
+    background-position: center top
+    height: 240px
+    width: 100%
 
 // BASIC STYLES
 a
@@ -234,11 +298,17 @@ h4, .xsm
   +below(mbp)
     font-size: 1.1rem
 h5, .xxsm, p, span
-  font-size: 1.3rem
+  font-size: 1.3em
   +below(tbp)
     font-size: 1.1rem
   +below(mbp)
     font-size: 1rem
+h6, .xxxsm, li
+  font-size: 1rem
+  +below(tbp)
+    font-size: .9rem
+  +below(mbp)
+    font-size: .8rem
 .p
   padding: 30px 0
 
@@ -315,11 +385,15 @@ footer
     color: lt-gray
   span
     col(1/2, cycle:2)
-    text-align: center
     margin: 2.5px 0
+    font-size: 1.1rem
+    text-align: center
     +below(tbp)
       stack()
       margin: 10px 0 0 0
+      font-size: 1rem
+    +below(mbp)
+      font-size: .9rem
 
 // FOOTER COLORS
 // .fa-html5

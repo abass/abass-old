@@ -464,10 +464,12 @@ header nav ul li .active {
 }
 .about {
   background: #34495e;
+  border-top: 4px solid #425f7a;
+  border-bottom: 4px solid #425f7a;
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
 }
-.about div > div {
+.about aside {
   *zoom: 1;
   float: left;
   display: inline;
@@ -478,26 +480,254 @@ header nav ul li .active {
   width: 31.3333333333333%;
   margin-left: 0%;
   margin-right: 3%;
-  border-left: 4px solid #262626;
+}
+.about aside:before,
+.about aside:after {
+  content: '';
+  display: table;
+}
+.about aside:after {
+  clear: both;
+}
+.about aside:last-child {
+  margin-right: 0%;
+}
+@media only screen and (max-width: 350px) {
+  .about aside {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    margin: 10px 0 20px 0;
+  }
+  .about aside:before,
+  .about aside:after {
+    content: '';
+    display: table;
+  }
+  .about aside:after {
+    clear: both;
+  }
+  .about aside:last-child {
+    margin-right: 0%;
+  }
+}
+.about article {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.6666666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.about article:before,
+.about article:after {
+  content: '';
+  display: table;
+}
+.about article:after {
+  clear: both;
+}
+.about article:last-child {
+  margin-right: 0%;
+}
+@media only screen and (max-width: 799px) {
+  .about article {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .about article:before,
+  .about article:after {
+    content: '';
+    display: table;
+  }
+  .about article:after {
+    clear: both;
+  }
+  .about article:last-child {
+    margin-right: 0%;
+  }
+}
+.about article > div {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
   padding-left: 10px;
   box-sizing: border-box;
   margin: 15px 0;
 }
-.about div > div:before,
-.about div > div:after {
+.about article > div:before,
+.about article > div:after {
   content: '';
   display: table;
 }
-.about div > div:after {
+.about article > div:after {
   clear: both;
 }
-.about div > div:nth-child(3n) {
+.about article > div:last-child {
   margin-right: 0%;
-  float: right;
 }
-.about div > div h3 {
-  color: #2a2a2a;
+@media only screen and (max-width: 799px) {
+  .about article > div {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.3333333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .about article > div:before,
+  .about article > div:after {
+    content: '';
+    display: table;
+  }
+  .about article > div:after {
+    clear: both;
+  }
+  .about article > div:nth-child(3n) {
+    margin-right: 0%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .about article > div {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .about article > div:before,
+  .about article > div:after {
+    content: '';
+    display: table;
+  }
+  .about article > div:after {
+    clear: both;
+  }
+  .about article > div:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .about article > div {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    margin: 5px 0;
+  }
+  .about article > div:before,
+  .about article > div:after {
+    content: '';
+    display: table;
+  }
+  .about article > div:after {
+    clear: both;
+  }
+  .about article > div:nth-child(1n) {
+    margin-right: 0%;
+    float: right;
+  }
+}
+.about article > div > h3 {
+  color: #507596;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
   text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.about article > div > span {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+@media only screen and (max-width: 799px) {
+  .about article > div > span {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about article > div > span {
+    font-size: 1em;
+  }
+}
+.about article > div ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.about article > div li {
+  border-left: 3px solid #425f7a;
+  padding-left: 8px;
+  margin: 5px 0;
+}
+.about article > div a {
+  font-weight: bold;
+}
+@media only screen and (max-width: 799px) {
+  .about article > div a {
+    font-weight: normal;
+  }
+}
+.portrait {
+  background: url("../../img/alex-portrait.png") no-repeat center center;
+  height: 620px;
+  width: 100%;
+}
+@media only screen and (max-width: 799px) {
+  .portrait {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .portrait {
+    display: block;
+    background-position: center top;
+    height: 240px;
+    width: 100%;
+  }
 }
 a {
   color: #1ea557;
@@ -583,7 +813,7 @@ h5,
 .xxsm,
 p,
 span {
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 @media only screen and (max-width: 799px) {
   h5,
@@ -599,6 +829,25 @@ span {
   p,
   span {
     font-size: 1rem;
+  }
+}
+h6,
+.xxxsm,
+li {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 799px) {
+  h6,
+  .xxxsm,
+  li {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h6,
+  .xxxsm,
+  li {
+    font-size: 0.8rem;
   }
 }
 .p {
@@ -733,8 +982,9 @@ footer span {
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  text-align: center;
   margin: 2.5px 0;
+  font-size: 1.1rem;
+  text-align: center;
 }
 footer span:before,
 footer span:after {
@@ -757,12 +1007,18 @@ footer span:nth-child(2n) {
     margin-left: auto;
     margin-right: auto;
     margin: 10px 0 0 0;
+    font-size: 1rem;
   }
   footer span:first-child {
     margin-left: auto;
   }
   footer span:last-child {
     margin-right: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  footer span {
+    font-size: 0.9rem;
   }
 }
 .github-color {
