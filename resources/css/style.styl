@@ -1,7 +1,7 @@
 @import 'jeet'
 
 // VARIABLES
-edit()
+// edit()
 scale = 0 400px 600px 800px 1140px
 
 dbp = 1140px
@@ -198,7 +198,7 @@ header
   text-shadow: b-ts
   aside
     col(1/3)
-    +below(xmbp)
+    +below(pbp)
       col(3/3)
       margin: 10px 0 20px 0
   article
@@ -252,10 +252,15 @@ header
     display: none
     height: 0
     width: 0
-  +below(xmbp)
+  +below(pbp)
     display: block
     background-position: center top
     height: 240px
+    width: 100%
+  +below(mbp)
+    display: block
+    background-position: center top
+    height: 200px
     width: 100%
 
 // BASIC STYLES
