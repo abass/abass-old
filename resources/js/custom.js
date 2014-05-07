@@ -4,8 +4,9 @@ INDEX:
 
 [1] External Links / Popout Window
 [2] Mobile Nav
-[3] Smooth Scroll
-[4] Google Analytics
+[3] Scrolling Nav
+[4] Smooth Scroll
+[5] Google Analytics
 
 -------------------------------------------------------------- */
 
@@ -74,9 +75,26 @@ $(function() {
   // });
 });
 
+
 /* --------------------------------------------------------------
 
-[3*] Smooth Scroll
+[3*] Scrolling Nav
+
+-------------------------------------------------------------- */
+
+var menu = $('nav#menu');
+
+var watcher = scrollMonitor.create( menu );
+
+watcher.lock();
+
+watcher.stateChange(function() {
+  $(menu).toggleClass('scrolled', this.isAboveViewport)
+});
+
+/* --------------------------------------------------------------
+
+[4*] Smooth Scroll
 
 -------------------------------------------------------------- */
 // jQuery(function($){
@@ -91,10 +109,9 @@ $(function() {
 //     })
 // });
 
-
 /* --------------------------------------------------------------
 
-[4*] Google Analytics
+[5*] Google Analytics
 
 -------------------------------------------------------------- */
 //abass.co
