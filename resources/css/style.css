@@ -2,8 +2,8 @@ html {
   font-family: Roboto, arial, sans-serif;
   font-weight: 200;
   color: #444;
-  font-size: 13.33px;
-  line-height: 19.995px;
+  font-size: 14.139999999999999px;
+  line-height: 21.209999999999997px;
 }
 a {
   color: #00f;
@@ -37,33 +37,33 @@ dt {
   color: #111;
 }
 h1 {
-  font-size: 37.324px;
-  line-height: 39.99px;
-  margin-bottom: 13.33px;
+  font-size: 39.592px;
+  line-height: 42.419999999999995px;
+  margin-bottom: 14.139999999999999px;
 }
 h2 {
-  font-size: 33.324999999999996px;
-  line-height: 37.324px;
-  margin-bottom: 10.664px;
+  font-size: 35.35px;
+  line-height: 39.592px;
+  margin-bottom: 11.312px;
 }
 h3 {
-  font-size: 29.326px;
-  line-height: 34.658px;
-  margin-bottom: 7.997999999999999px;
+  font-size: 31.107999999999997px;
+  line-height: 36.763999999999996px;
+  margin-bottom: 8.484px;
 }
 h4 {
-  font-size: 26.66px;
-  line-height: 31.991999999999997px;
-  margin-bottom: 5.332px;
+  font-size: 28.279999999999998px;
+  line-height: 33.936px;
+  margin-bottom: 5.656px;
 }
 h5 {
-  font-size: 21.328px;
-  line-height: 29.326px;
-  margin-bottom: 2.666px;
+  font-size: 22.624px;
+  line-height: 31.107999999999997px;
+  margin-bottom: 2.828px;
 }
 h6 {
-  font-size: 17.329px;
-  line-height: 26.66px;
+  font-size: 18.381999999999998px;
+  line-height: 28.279999999999998px;
   margin-bottom: 0px;
 }
 p,
@@ -71,7 +71,7 @@ ul,
 ol,
 pre,
 dl {
-  margin-bottom: 13.33px;
+  margin-bottom: 14.139999999999999px;
 }
 ul,
 ol {
@@ -79,31 +79,31 @@ ol {
 }
 li,
 dd {
-  margin-bottom: 6.665px;
+  margin-bottom: 7.069999999999999px;
 }
 pre {
-  font-size: 10.664px;
+  font-size: 11.312px;
 }
 header p {
   color: #aaa;
 }
 header h1 ~ p {
-  margin-top: -6.665px;
+  margin-top: -7.069999999999999px;
 }
 header h2 ~ p {
-  margin-top: -5.332px;
+  margin-top: -5.656px;
 }
 header h3 ~ p {
-  margin-top: -3.999px;
+  margin-top: -4.242px;
 }
 header h4 ~ p {
-  margin-top: -2.666px;
+  margin-top: -2.828px;
 }
 header h5 ~ p {
-  margin-top: -1.333px;
+  margin-top: -1.414px;
 }
 header h6 ~ p {
-  margin-top: -1.333px;
+  margin-top: -1.414px;
 }
 code {
   padding: 3px 4px;
@@ -408,6 +408,16 @@ header nav#menu.scrolled {
 @media only screen and (max-width: 500px) {
   .main-section h1 {
     margin-top: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main-section h2 {
+    font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main-section h2 {
+    font-size: 1.8em;
   }
 }
 .main-section h1,
