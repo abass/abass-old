@@ -5,8 +5,9 @@ INDEX:
 [1] External Links / Popout Window
 [2] Mobile Nav
 [3] Scrolling Nav
-[4] Smooth Scroll
-[5] Google Analytics
+[4] Popup Lightbox
+[5] Smooth Scroll
+[6] Google Analytics
 
 -------------------------------------------------------------- */
 
@@ -94,7 +95,46 @@ watcher.stateChange(function() {
 
 /* --------------------------------------------------------------
 
-[4*] Smooth Scroll
+[4*] Popup Lightbox
+
+-------------------------------------------------------------- */
+$(document).ready(function() {
+  $('.popup-with-zoom-anim').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in'
+  });
+
+  // $('.popup-with-move-anim').magnificPopup({
+  //   type: 'inline',
+
+  //   fixedContentPos: false,
+  //   fixedBgPos: true,
+
+  //   overflowY: 'auto',
+
+  //   closeBtnInside: true,
+  //   preloader: false,
+
+  //   midClick: true,
+  //   removalDelay: 300,
+  //   mainClass: 'my-mfp-slide-bottom'
+  // });
+});
+
+/* --------------------------------------------------------------
+
+[5*] Smooth Scroll
 
 -------------------------------------------------------------- */
 // jQuery(function($){
@@ -111,7 +151,7 @@ watcher.stateChange(function() {
 
 /* --------------------------------------------------------------
 
-[5*] Google Analytics
+[6*] Google Analytics
 
 -------------------------------------------------------------- */
 //abass.co
