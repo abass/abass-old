@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /includes/
+Disallow: /resources/
+Disallow: /w/
+Sitemap: http://abass.co/sitemap.xml
