@@ -1188,29 +1188,201 @@ header nav#menu.scrolled {
     margin: 10px 0;
   }
 }
-.contact div {
-  text-align: center;
+form div {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.3333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
 }
-.contact a {
-  background: #27ae60;
-  color: #fff;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
-  font-weight: bold;
-  border-radius: 3px;
-  padding: 20px;
-  border-bottom: 3px solid #0c9345;
-  display: block;
-  width: 400px;
-  margin: 0 auto;
+form div:before,
+form div:after {
+  content: '';
+  display: table;
 }
-@media only screen and (max-width: 500px) {
-  .contact a {
-    width: 87%;
+form div:after {
+  clear: both;
+}
+form div:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+@media only screen and (max-width: 799px) {
+  form div {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  form div:before,
+  form div:after {
+    content: '';
+    display: table;
+  }
+  form div:after {
+    clear: both;
+  }
+  form div:nth-child(3n) {
+    margin-right: 3%;
+    float: left;
+  }
+  form div:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
   }
 }
-.contact a:hover {
+@media only screen and (max-width: 799px) {
+  form div {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form div:first-child {
+    margin-left: auto;
+  }
+  form div:last-child {
+    margin-right: auto;
+  }
+}
+form label {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+form label:first-child {
+  margin-left: auto;
+}
+form label:last-child {
+  margin-right: auto;
+}
+form div:nth-child(1n+4) {
+  margin-top: 25px;
+}
+@media only screen and (max-width: 799px) {
+  form div:nth-child(1n+2) {
+    margin-top: 20px;
+  }
+}
+form .textarea {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.6666666666667%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+form .textarea:before,
+form .textarea:after {
+  content: '';
+  display: table;
+}
+form .textarea:after {
+  clear: both;
+}
+form .textarea:last-child {
+  margin-right: 0%;
+}
+@media only screen and (max-width: 799px) {
+  form .textarea {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form .textarea:first-child {
+    margin-left: auto;
+  }
+  form .textarea:last-child {
+    margin-right: auto;
+  }
+}
+form input,
+form textarea {
+  font-family: Roboto, arial, sans-serif;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #f9f9f9;
+  border-bottom: 4px solid #eee;
+}
+@media only screen and (max-width: 799px) {
+  form input,
+  form textarea {
+    display: block;
+  }
+}
+form input:focus,
+form textarea:focus {
+  border-color: rgba(249,94,78,0.7);
+}
+form .optional input:focus,
+form .optional textarea:focus {
+  border-color: #ddd;
+}
+form textarea {
+  height: 120px;
+}
+form div:last-child {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 799px) {
+  form div:last-child {
+    margin-top: 20px;
+  }
+}
+form input[type=submit],
+form input[type=reset] {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 13px;
+}
+form input[type=submit] {
   color: #fff;
-  background: #1ea557;
+  border-color: #159c4e;
+  background: #30b769;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+form input[type=reset] {
+  background: #f9f9f9;
+  font-size: 16px;
+}
+form .optional label {
+  margin: 0;
+}
+form .optional label:after {
+  content: "optional";
+  font-weight: 300;
+  color: #ababab;
 }
 a {
   color: #1ea557;

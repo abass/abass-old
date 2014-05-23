@@ -13,6 +13,7 @@ mbp = 500px
 xmbp = 420px
 
 //#27ae60
+ltr-green = rgba(48, 183, 105, 1.0)
 lt-green = rgba(39, 174, 96, 1.0)
 green = rgba(30, 165, 87, 1.0)
 dk-green = rgba(21, 156, 78, 1.0)
@@ -30,7 +31,10 @@ dkrr-blue = rgba(44, 62, 80, 1.0)
 orange = #fc6e51
 dk-orange = #e7522a
 
-red = #e74c3c
+//#e74c3c
+ltr-red = rgba(249, 94, 78, .7)
+lt-red = rgba(240, 85, 69, 1.0)
+red = rgba(231, 76, 60, 1.0)
 dk-red = #c0392b
 
 black = #111111
@@ -352,26 +356,87 @@ header
   //   height: 200px
 
 // CONTACT
-.contact
-  div
-    text-align: center
-  a
-    background: lt-green
-    color: white
-    text-shadow: b-ts
-    font-weight: bold
-    border-radius: 3px
-    padding: 20px
-    border-bottom: 3px solid dkr-green
-    display: block
-    width: 400px
-    margin: 0 auto
-    +below(mbp)
-      width: 87%
-  a:hover
-    color: white
-    background: green
+// .contact
+//   div
+//     text-align: center
+//   a
+//     background: lt-green
+//     color: white
+//     text-shadow: b-ts
+//     font-weight: bold
+//     border-radius: 3px
+//     padding: 20px
+//     border-bottom: 3px solid dkr-green
+//     display: block
+//     width: 400px
+//     margin: 0 auto
+//     +below(mbp)
+//       width: 87%
+//   a:hover
+//     color: white
+//     background: green
 
+// CONTACT
+form
+  div
+    col(1/3, cycle:3)
+    +below(tbp)
+      col(1/2, cycle:2, uncycle:3)
+    +below(tbp)
+      stack()
+  label
+    stack()
+    font-weight: bold
+    cursor: pointer
+  div:nth-child(1n+4)
+    margin-top: 25px
+  div:nth-child(1n+2)
+    +below(tbp)
+      margin-top: 20px
+  .textarea
+    col(2/3)
+    +below(tbp)
+      stack()
+  input, textarea
+    font-family: typo_body
+    width: 100%
+    box-sizing: border-box
+    padding: 10px
+    border: none
+    outline: none
+    background: ltrrrr-gray
+    border-bottom: 4px solid ltrr-gray
+    +below(tbp)
+      display: block
+  input:focus, textarea:focus
+    border-color: ltr-red
+  .optional input:focus, .optional textarea:focus
+    border-color: ltr-gray
+  textarea
+    height: 120px
+  div:last-child
+    margin-top: 50px
+    +below(tbp)
+      margin-top: 20px
+  input[type=submit], input[type=reset]
+    cursor: pointer
+    font-size: 18px
+    padding: 13px
+  input[type=submit]
+    color: white
+    border-color: dk-green
+    background: ltr-green
+    margin-bottom: 20px
+    font-weight: bold
+  input[type=reset]
+    background: ltrrrr-gray
+    font-size: 16px
+  .optional label
+    margin: 0
+  .optional label:after
+    content: "optional"
+    font-weight: 300
+    color: lt-gray
 
 // BASIC STYLES
 a

@@ -182,13 +182,42 @@
       </div>
     </section>
 
-    <!-- HOME -->
+    <!-- CONTACT -->
     <section id="contact" class="container contact">
+      <!-- QUESTION FORM -->
+      <form id="question-form" action="resources/script/question-send" method="post" class="contained">
+        <div>
+          <label class="no-margin" for="question-name">Name</label>
+          <input type="text" name="name" value="" id="question-name" placeholder="First / Last Name" required>
+        </div>
+        <div>
+          <label for="question-email">Email Address</label>
+          <input type="email" name="email" value="" id="question-email" placeholder="email@example.com" required>
+        </div>
+        <div class="optional">
+          <label for="question-subject">Subject</label>
+          <input type="text" name="subject" value="" id="question-subject" placeholder="e.g. Question">
+        </div>
+        <div class="textarea">
+          <label for="question-message">Your Message</label>
+          <textarea name="message" id="question-message" placeholder="Please include any additional information pertaining to your inquiry." required></textarea>
+        </div>
+        <div class="hidden">
+          <label for="question-spam-check">Do not fill out this field:</label>
+          <input name="spam-check" type="text" value="" id="question-spam-check" />
+        </div>
+        <div>
+          <input class="large strong green-btn" type="submit" value="Submit ›">
+          <input class="large strong gray-bg" type="reset" value="Reset">
+        </div>
+      </form>
+    </section>
+    <!-- <section id="contact" class="container contact">
       <div class="contained">
         <h1>Contact</h1>
         <a href="mailto:alex@abass.co"><span>Send an Email</span></a>
       </div>
-    </section>
+    </section> -->
 
     <!-- FOOTER -->
     <footer class="container">
@@ -197,9 +226,9 @@
         <span><i class="fa fa-angle-left"></i> Social Channels <i class="fa fa-angle-right"></i></span>
         <span>
           <a href="http://validator.w3.org/check?uri=http://abass.co/" rel="nofollow"><i class="fa fa-html5"></i></a> // 
-          <a href="#">About</a> // 
-          <a href="#">Portfolio</a> // 
-          <a href="#">Contact</a> // 
+          <a href="#portfolio">Portfolio</a> // 
+          <a href="#about">About</a> // 
+          <a href="#contact">Contact</a> // 
           <a href="http://www.cyberbytesinc.com/blog">Blog <i class="fa fa-external-link"></i></a>
         </span>
         <span>
