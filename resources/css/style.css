@@ -813,7 +813,7 @@ header nav#menu.scrolled {
 }
 @media only screen and (max-width: 799px) {
   .about aside div:nth-child(2) {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -1187,6 +1187,30 @@ header nav#menu.scrolled {
   .portrait {
     margin: 10px 0;
   }
+}
+.contact div {
+  text-align: center;
+}
+.contact a {
+  background: #27ae60;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 20px;
+  border-bottom: 3px solid #0c9345;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .contact a {
+    width: 87%;
+  }
+}
+.contact a:hover {
+  color: #fff;
+  background: #1ea557;
 }
 a {
   color: #1ea557;

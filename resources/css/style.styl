@@ -12,8 +12,11 @@ pbp = 680px
 mbp = 500px
 xmbp = 420px
 
-lt-green = #27ae60
-green = #1ea557
+//#27ae60
+lt-green = rgba(39, 174, 96, 1.0)
+green = rgba(30, 165, 87, 1.0)
+dk-green = rgba(21, 156, 78, 1.0)
+dkr-green = rgba(12, 147, 69, 1.0)
 
 // 7, 11, 14 #34495e #2c3e50
 ltrrr-blue = rgba(80, 117, 150, 1.0)
@@ -239,7 +242,7 @@ header
         padding-top: 10px
     div:nth-child(2)
       +below(tbp)
-        margin-top: 30px
+        margin-top: 20px
       +below(xmbp)
         margin-top: 0
     a div
@@ -254,7 +257,7 @@ header
     a:hover div
       background: dkr-gray
     // a:focus div, a:active div
-    //   background: black
+    // background: black
   article
     col(2/3)
     shift(-1/3)
@@ -347,6 +350,28 @@ header
   // +below(mbp)
   //   background-position: center top
   //   height: 200px
+
+// CONTACT
+.contact
+  div
+    text-align: center
+  a
+    background: lt-green
+    color: white
+    text-shadow: b-ts
+    font-weight: bold
+    border-radius: 3px
+    padding: 20px
+    border-bottom: 3px solid dkr-green
+    display: block
+    width: 400px
+    margin: 0 auto
+    +below(mbp)
+      width: 87%
+  a:hover
+    color: white
+    background: green
+
 
 // BASIC STYLES
 a
