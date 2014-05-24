@@ -202,13 +202,13 @@ body {
   text-shadow: 1px 1px 0 rgba(255,255,255,0.25);
   font-family: Roboto, arial, sans-serif;
 }
-header section {
+header .header {
   padding: 16px 20px;
   border-top: 2px solid #111;
   background: #27ae60;
   border-bottom: 4px solid #1ea557;
 }
-header section span {
+header .header span {
   *zoom: 1;
   float: left;
   display: inline;
@@ -220,46 +220,46 @@ header section span {
   margin-left: 0%;
   margin-right: 3%;
 }
-header section span:before,
-header section span:after {
+header .header span:before,
+header .header span:after {
   content: '';
   display: table;
 }
-header section span:after {
+header .header span:after {
   clear: both;
 }
-header section span:last-child {
+header .header span:last-child {
   margin-right: 0%;
 }
-header section span .logo {
+header .header span .logo {
   background: url("../../img/logo.png") no-repeat center center;
   float: left;
   height: 65px;
   width: 59px;
 }
 @media only screen and (max-width: 799px) {
-  header section span .logo {
+  header .header span .logo {
     background: url("../../img/logo-small.png") no-repeat center center;
     height: 50px;
     width: 45px;
   }
 }
-header section span.menu {
+header .header span.menu {
   text-align: right;
   padding: 13px 0;
   display: none;
 }
 @media only screen and (max-width: 799px) {
-  header section span.menu {
+  header .header span.menu {
     display: block;
   }
 }
 @media only screen and (max-width: 500px) {
-  header section span.menu {
+  header .header span.menu {
     padding: 14px 0;
   }
 }
-header section span.menu a {
+header .header span.menu a {
   color: #fff;
   background: #111;
   padding: 8px 18px;
