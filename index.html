@@ -13,6 +13,7 @@
     <!-- STYLES -->
     <link href="resources/css/style.css" rel="stylesheet">
     <link href="resources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resources/css/animations.min.css" rel="stylesheet"><!-- ANIMATIONS -->
     <link href="resources/css/magnific-popup.css" rel="stylesheet"><!-- POPUP -->
 
     <!-- VIEWPORT -->
@@ -29,8 +30,9 @@
           <span>
             <a href="/"><img src="img/clear.gif" class="logo" alt="Alex Bass"></a>
           </span>
-          <span class="menu">
-            <a href="#">MENU</a>
+          <span class="cta">
+            <a href="/resources/dl/resume.pdf">View Résumé</a>
+            <a href="#" class="menu">MENU</a>
           </span>
         </div>
       </div>
@@ -47,20 +49,33 @@
 
     <!-- HOME -->
     <section class="container home">
-      <h1>Alex Bass<span>Designer/Dev</span></h1>
+      <h1 class="animate" data-anim-type="fadeInUp" data-anim-delay="200">Alex Bass<span>Designer/Dev</span></h1>
       <div class="contained main-section">
         <!-- <h1>Alex Bass</h1>
         <h2>Designer // Developer</h2> -->
         <div>
-          <span><img src="img/alex.jpg" class="alex" alt="Alex Bass"></span>
-          <p>Hello! I'm Alex Bass, a 22 year old Front-End Developer &amp; UI/UX Designer from Buffalo, New York. I am the Co-Founder of <a href="http://www.cyberbytesinc.com">CyberBytes Inc.</a> and I make <a href="http://www.cyberbytesinc.com/portfolio/web-design-cheat-sheet">BlackBerry 10 Apps</a> in my spare time. I eat, sleep, and breathe code, have a keen eye for detail, and always strive to be pixel perfect.<br><br><strong>Check out some of my work below!</strong></p>
+          <aside class="animate" data-anim-type="fadeInRight" data-anim-delay="700">
+            <img src="img/alex.jpg" class="alex" alt="Alex Bass">
+            <ul class="socials animate" data-anim-type="fadeInRight" data-anim-delay="1000">
+              <a href="https://github.com/Flip4Bytes" class="github-color"><i class="fa fa-github-square"></i></a>
+              <a href="https://twitter.com/Flip4Bytes" class="twitter-color"><i class="fa fa-twitter-square"></i></a>
+              <a href="https://www.linkedin.com/in/flip4bytes" class="linkedin-color"><i class="fa fa-linkedin-square"></i></a>
+              <a href="https://www.facebook.com/Flip4Life" class="facebook-color"><i class="fa fa-facebook-square"></i></a>
+              <a href="https://plus.google.com/114533524603904902096/" rel="publisher" class="google-color"><i class="fa fa-google-plus-square"></i></a>
+              <a href="https://www.youtube.com/user/Flip4Bytes" class="youtube-color"><i class="fa fa-youtube-square"></i></a>
+            </ul>
+          </aside>
+          <article class="animate" data-anim-type="fadeInUp" data-anim-delay="700">
+            <p>Hello! I'm Alex Bass, a 22 year old Front-End Developer &amp; UI/UX Designer from Buffalo, New York. I am the Co-Founder of <a href="http://www.cyberbytesinc.com">CyberBytes Inc.</a> and I make <a href="http://www.cyberbytesinc.com/portfolio/web-design-cheat-sheet">BlackBerry 10 Apps</a> in my spare time. I eat, sleep, and breathe code, have a keen eye for detail, and always strive to be pixel perfect.</p>
+            <p class="animate" data-anim-type="fadeInUp" data-anim-delay="1000"><strong>Check out some of my work below!</strong></p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- TOGGLE -->
     <div id="portfolio" class="container">
-      <div class="contained toggle">
+      <div class="contained toggle animate" data-anim-type="bounceIn" data-anim-delay="1400">
         <a href="#" class="active">Website Design</a>
         <a href="#" class="">App Development</a>
       </div>
@@ -69,24 +84,24 @@
     <!-- PORTFOLIO -->
     <!-- WEBSITE DESIGN -->
     <section id="1" class="container portfolio">
-      <h2>Portfolio<span>MySites</span></h2>
+      <h2 class="animate" data-anim-type="fadeIn" data-anim-delay="300">Portfolio<span>MySites</span></h2>
       <div class="contained">
-        <aside><img src="img/portfolio/cb.png" alt="CyberBytes Inc."></aside>
-        <article>
+        <aside class="animate" data-anim-type="fadeInLeft" data-anim-delay="200"><img src="img/portfolio/cb.png" alt="CyberBytes Inc."></aside>
+        <article class="animate" data-anim-type="fadeInRight" data-anim-delay="300">
           <h6><strong>CyberBytes Inc.</strong> - <a href="http://www.cyberbytesinc.com">Visit Site</a></h6>
           <p class="xxsm">This is the site that I made for my company. I focused a lot of importance on making it as mobile-friendly as possible. I tried to show the power of our services through the functionality of the website so it sells itself.</p>
         </article>
       </div>
       <div class="contained">
-        <aside><img src="img/portfolio/ama.png" alt="American Marketing Association"></aside>
-        <article>
+        <aside class="animate" data-anim-type="fadeInLeft" data-anim-delay="500"><img src="img/portfolio/ama.png" alt="American Marketing Association"></aside>
+        <article class="animate" data-anim-type="fadeInRight" data-anim-delay="600">
           <h6><strong>Canisius College AMA</strong> - <a href="http://www.canisiusama.com">Visit Site</a></h6>
           <p>I focused on creating a fairly flat user-interface to allow for content and images to be the main focal point on each page. They needed this site to help inform students of the organization while giving them useful information to show students why it would be beneficial for them to join.</p>
         </article>
       </div>
       <div class="contained">
-        <aside><img src="img/portfolio/rac.png" alt="RAC-Engineering"></aside>
-        <article>
+        <aside class="animate" data-anim-type="fadeInLeft" data-anim-delay="200"><img src="img/portfolio/rac.png" alt="RAC-Engineering"></aside>
+        <article class="animate" data-anim-type="fadeInRight" data-anim-delay="300">
           <h6>RAC-Engineering - <a href="http://www.rac-engineering.com">Visit Site</a></h6>
           <p>This site is currently under construction. It will be updated here upon completion. Feel free to check out the site in it's current form.</p>
         </article>
@@ -101,12 +116,12 @@
 
     <!-- ABOUT -->
     <section id="about" class="container about">
-      <h2>About<span>MyUniqueness</span></h2>
+      <h2 class="animate" data-anim-type="fadeIn" data-anim-delay="300">About<span>MySpecialties</span></h2>
       <div class="contained">
-        <aside>
+        <aside class="animate" data-anim-type="bounceIn" data-anim-delay="300">
           <div><img src="img/clear.gif" class="portrait" alt="Alex Bass"></div>
           <div>
-            <h6>Background</h6>
+            <!-- <h6>Background</h6> -->
             <span>Basic Information</span>
             <ul>
               <li>Alexander Bass</li>
@@ -118,7 +133,7 @@
           <a href="#small-dialog" class="popup-with-zoom-anim"><div>More Information</div></a>
         </aside>
         <article>
-          <div>
+          <div class="animate" data-anim-type="fadeInLeft" data-anim-delay="350">
             <h6>Experience</h6>
             <span>Past Work/Projects</span>
             <ul>
@@ -127,7 +142,7 @@
               <li>App Developer - <a href="http://www.cyberbytesinc.com/portfolio/web-design-cheat-sheet" rel="nofollow">WDCS</a></li>
             </ul>
           </div>
-          <div>
+          <div class="animate" data-anim-type="fadeInLeft" data-anim-delay="400">
             <h6>Languages</h6>
             <span>Coding (Preferred)</span>
             <ul>
@@ -136,7 +151,7 @@
               <li>Qt / QML / Cascades</li>
             </ul>
           </div>
-          <div>
+          <div class="animate" data-anim-type="fadeInLeft" data-anim-delay="450">
             <h6>Degree</h6>
             <span>Bachelors (Triple Major)</span>
             <ul>
@@ -145,7 +160,7 @@
               <li>Entrepreneurship</li>
             </ul>
           </div>
-          <div>
+          <div class="animate" data-anim-type="fadeInLeft" data-anim-delay="500">
             <h6>Education</h6>
             <span>Canisius College</span>
             <ul>
@@ -154,7 +169,7 @@
               <li>Dean's Honor List</li>
             </ul>
           </div>
-          <div>
+          <div class="animate" data-anim-type="fadeInLeft" data-anim-delay="550">
             <h6>Random</h6>
             <span>Interesting Info</span>
             <ul>
@@ -163,7 +178,7 @@
               <li>Mechanical Keyboard Lover</li>
             </ul>
           </div>
-          <div>
+          <div class="animate" data-anim-type="fadeInLeft" data-anim-delay="600">
             <h6>Hobbies</h6>
             <span>Personal Interests</span>
             <ul>
@@ -189,28 +204,28 @@
 
     <!-- CONTACT -->
     <section id="contact" class="container contact">
-      <h2>Contact<span>HaveAQuestion?</span></h2>
+      <h2 class="animate" data-anim-type="fadeIn" data-anim-delay="300">Contact<span>GetInTouch</span></h2>
       <!-- QUESTION FORM -->
-      <form id="question-form" action="resources/script/question-send" method="post" class="contained">
+      <form id="contact-form" action="resources/script/contact-send" method="post" class="contained animate" data-anim-type="bounceIn" data-anim-delay="400">
         <div>
-          <label class="no-margin" for="question-name">Name</label>
-          <input type="text" name="name" value="" id="question-name" placeholder="First / Last Name" required>
+          <label class="no-margin" for="contact-name">Name</label>
+          <input type="text" name="name" value="" id="contact-name" placeholder="First / Last Name" required>
         </div>
         <div>
-          <label for="question-email">Email Address</label>
-          <input type="email" name="email" value="" id="question-email" placeholder="email@example.com" required>
+          <label for="contact-email">Email Address</label>
+          <input type="email" name="email" value="" id="contact-email" placeholder="email@example.com" required>
         </div>
         <div class="optional">
-          <label for="question-subject">Subject</label>
-          <input type="text" name="subject" value="" id="question-subject" placeholder="e.g. Question">
+          <label for="contact-subject">Subject</label>
+          <input type="text" name="subject" value="" id="contact-subject" placeholder="e.g. Question">
         </div>
         <div class="textarea">
-          <label for="question-message">Your Message</label>
-          <textarea name="message" id="question-message" placeholder="Please include any additional information pertaining to your inquiry." required></textarea>
+          <label for="contact-message">Your Message</label>
+          <textarea name="message" id="contact-message" placeholder="Please include any additional information pertaining to your inquiry." required></textarea>
         </div>
         <div class="hidden">
-          <label for="question-spam-check">Do not fill out this field:</label>
-          <input name="spam-check" type="text" value="" id="question-spam-check" />
+          <label for="contact-spam-check">Do not fill out this field:</label>
+          <input name="spam-check" type="text" value="" id="contact-spam-check" />
         </div>
         <div>
           <input class="large strong green-btn" type="submit" value="Submit ›">
@@ -243,7 +258,7 @@
           <a href="https://www.linkedin.com/in/flip4bytes" class="linkedin-color">LinkedIn / </a>
           <a href="https://www.facebook.com/Flip4Life" class="facebook-color">Facebook / </a>
           <a href="https://plus.google.com/114533524603904902096/" rel="publisher" class="google-color">Google+ / </a>
-          <a href="https://www.youtube.com/user/Flip4Bytes" class="youtube-red">YouTube</a>
+          <a href="https://www.youtube.com/user/Flip4Bytes" class="youtube-color">YouTube</a>
         </span>
       </div>
     </footer>
@@ -251,6 +266,8 @@
     <!-- JAVASCRIPT -->
     <script src="resources/js/jquery.min.js"></script><!-- JQUERY -->
     <script src="resources/js/scrollmonitor.js"></script><!-- SCROLL MONITOR -->
+    <script src="resources/js/animations.min.js"></script><!-- ANIMATIONS -->
+    <script src="resources/js/visible.min.js"></script><!-- VISIBLE (ANIMATIONS) -->
     <script src="resources/js/jquery.magnific-popup.min.js"></script><!-- MAGNIFIC POPUP -->
     <script src="resources/js/custom.js"></script><!-- CUSTOM -->
   </body>
