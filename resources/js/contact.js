@@ -1,11 +1,10 @@
-jQuery(function($){
-    $("#request-number").mask("(999) 999-9999");
-    $("#request-start-date").mask("99/99/2099");
-});
-
+// jQuery(function($){
+//     $("#request-number").mask("(999) 999-9999");
+//     $("#request-start-date").mask("99/99/2099");
+// });
 $(function() {
     // Setup any needed variables.
-    var $form   = $('#question-form'),
+    var $form   = $('#contact-form'),
         $loader = '<div class="loading"></div>';
 
     $form.append('<div id="response" class="hidden">');
@@ -18,7 +17,7 @@ $(function() {
         $response.hide().html( $loader ).show();
 
         // Make AJAX request
-        $.post('resources/script/question-send', $form.serialize(), function( data ) {
+        $.post('resources/script/contact-send', $form.serialize(), function( data ) {
         // $.post('/resources/script/contact-send.php', $form.serialize(), function( data ) {
 
             // Show response message
