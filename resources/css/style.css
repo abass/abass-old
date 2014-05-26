@@ -1411,6 +1411,29 @@ form .optional label:after {
   font-weight: 300;
   color: #ababab;
 }
+form div#response {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+form div#response:before,
+form div#response:after {
+  content: '';
+  display: table;
+}
+form div#response:after {
+  clear: both;
+}
+form div#response:last-child {
+  margin-right: 0%;
+}
 a {
   color: #1ea557;
   text-decoration: none;
