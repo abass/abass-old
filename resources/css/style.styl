@@ -59,11 +59,13 @@ transition = color 0.25s, background 0.25s, border-color 0.25s
 
 body
   margin: 0
-  overflow-x: hidden
   color: dkr-gray
   font-weight: 300
   text-shadow: w-ts
   font-family: Roboto, arial, sans-serif;
+
+section
+  overflow: hidden
 
 header
   .header
@@ -453,6 +455,33 @@ form
   div#response
     col(3/3)
 
+.loading
+  width: 30px
+  height: 30px
+  background-color: green //#333
+  -webkit-animation: rotateplane 1s infinite ease-in-out
+  animation: rotateplane 1s infinite ease-in-out
+
+
+@-webkit-keyframes rotateplane
+  0%
+    -webkit-transform: perspective(120px)
+  50%
+    -webkit-transform: perspective(120px) rotateY(180deg)
+  100%
+    -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg)
+
+@keyframes rotateplane
+  0%
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  50%
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  100%
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+
 // BASIC STYLES
 a
   color: green
@@ -628,3 +657,27 @@ footer
 .youtube-color
   color: #c9312c
 // edit()
+
+// ANIMATION
+.delay-100
+  animation-delay: .1s;
+.delay-200
+  animation-delay: .2s;
+.delay-300
+  animation-delay: .3s;
+.delay-400
+  animation-delay: .4s;
+.delay-500
+  animation-delay: .5s;
+.delay-600
+  animation-delay: .6s;
+.delay-700
+  animation-delay: .7s;
+.delay-800
+  animation-delay: .8s;
+.delay-900
+  animation-delay: .9s;
+.delay-1000
+  animation-delay: 1s;
+  // animation-duration: 3s;
+  // animation-iteration-count: infinite;

@@ -197,11 +197,13 @@ pre code {
 }
 body {
   margin: 0;
-  overflow-x: hidden;
   color: #262626;
   font-weight: 300;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.25);
   font-family: Roboto, arial, sans-serif;
+}
+section {
+  overflow: hidden;
 }
 header .header {
   padding: 16px 20px;
@@ -1434,6 +1436,24 @@ form div#response:after {
 form div#response:last-child {
   margin-right: 0%;
 }
+.loading {
+  width: 30px;
+  height: 30px;
+  background-color: #1ea557;
+  -webkit-animation: rotateplane 1s infinite ease-in-out;
+  animation: rotateplane 1s infinite ease-in-out;
+}
+@-webkit-keyframes rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
 a {
   color: #1ea557;
   text-decoration: none;
@@ -1715,4 +1735,72 @@ footer span:nth-child(2n) {
 }
 .youtube-color {
   color: #c9312c;
+}
+.delay-100 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.delay-600 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.delay-700 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.delay-800 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.delay-900 {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.delay-1000 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+@-webkit-keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
 }
