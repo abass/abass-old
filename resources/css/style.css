@@ -1736,46 +1736,6 @@ footer span:nth-child(2n) {
 .youtube-color {
   color: #c9312c;
 }
-.delay-100 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.delay-200 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.delay-300 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.delay-400 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.delay-500 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-.delay-600 {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-.delay-700 {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-.delay-800 {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-.delay-900 {
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-}
-.delay-1000 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
 @-webkit-keyframes rotateplane {
   0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
