@@ -56,21 +56,11 @@ dk-gray = #2a2a2a
 dkr-gray = #262626
 
 transition = color 0.25s, background 0.25s, border-color 0.25s
-//   -webkit-transition: color 0.25s, background 0.25s
-//      -moz-transition: color 0.25s, background 0.25s
-//        -o-transition: color 0.25s, background 0.25s
-//       -ms-transition: color 0.25s, background 0.25s
-//           transition: color 0.25s, background 0.25s
-
-// html
-//   +below(tbp)
-//     background: red
 
 body
   margin: 0
   overflow-x: hidden
   color: dkr-gray
-  // font-size: 16px
   font-weight: 300
   text-shadow: w-ts
   font-family: Roboto, arial, sans-serif;
@@ -220,12 +210,12 @@ header
       stack()
       unshift()
       margin: 10px 0 0 0
-  p:last-child
-    padding-top: 25px
-    +below(tbp)
-      padding-top: 15px
-    +below(mbp)
-      padding-top: 10px
+  // p:last-child
+  //   padding-top: 25px
+  //   +below(tbp)
+  //     padding-top: 15px
+  //   +below(mbp)
+  //     padding-top: 10px
 
 .alex
   border-radius: 10px
