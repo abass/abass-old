@@ -25,7 +25,7 @@ if( isset($_POST['name']) && empty($_POST['spam-check']) ) {
 	// Set a subject & check if custom subject exist
 	if( $input_subject ) $subject = "(Contact) - $input_subject";
 	else $subject = "(Contact) - No Subject";
-	// $message .= "$input_message\n";
+	$message .= "$input_message\n";
 	$message .= "\n\n---\nThis email was sent by $input_name from $input_email";
 
 	// Now check to see if there are any errors

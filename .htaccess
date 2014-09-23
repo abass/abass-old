@@ -43,8 +43,8 @@ RewriteRule .* – [F,L]
 # index.php [301 redirect]
 Options +FollowSymLinks
 RewriteEngine on
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-RewriteRule ^index\.php$ http://www.cyberbytesinc.com/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://abass.co/ [R=301,L]
 
 #RewriteBase /
 #RewriteRule ^(.*)\.html$ $1.php [R=301,L]
@@ -62,13 +62,6 @@ RewriteRule ^/?(.*)$ /$1.php [L]
 RewriteEngine On
 RewriteCond %{HTTP_HOST} http://www.abass.co/
 RewriteRule (.*) ^abass.co$1 [R=301,L]
-
-#301 Redirects
-#Recent Redirects
-redirect 301 /about /
-redirect 301 /portfolio /
-redirect 301 /contact /
-redirect 301 /blog /
 
 # Denies Access to File Structure
 Options -Indexes

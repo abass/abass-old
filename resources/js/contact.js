@@ -1,7 +1,3 @@
-// jQuery(function($){
-//     $("#request-number").mask("(999) 999-9999");
-//     $("#request-start-date").mask("99/99/2099");
-// });
 $(function() {
     // Setup any needed variables.
     var $form   = $('#contact-form'),
