@@ -30,11 +30,11 @@ Options +Indexes
 </FilesMatch>
 
 # Error 404 Pages
-ErrorDocument 400 /404.php
-ErrorDocument 401 /404.php
-ErrorDocument 403 /404.php
-ErrorDocument 404 /404.php
-ErrorDocument 500 /404.php
+ErrorDocument 400 /
+ErrorDocument 401 /
+ErrorDocument 403 /
+ErrorDocument 404 /
+ErrorDocument 500 /
 
 # Libwww-pearl Access Test
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
