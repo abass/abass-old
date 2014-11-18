@@ -83,15 +83,15 @@ $(function() {
 
 -------------------------------------------------------------- */
 
-var menu = $('nav#menu');
+// var menu = $('nav#menu');
 
-var watcher = scrollMonitor.create( menu );
+// var watcher = scrollMonitor.create( menu );
 
-watcher.lock();
+// watcher.lock();
 
-watcher.stateChange(function() {
-  $(menu).toggleClass('scrolled', this.isAboveViewport)
-});
+// watcher.stateChange(function() {
+//   $(menu).toggleClass('scrolled', this.isAboveViewport)
+// });
 
 /* --------------------------------------------------------------
 
