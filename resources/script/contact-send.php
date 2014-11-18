@@ -1,7 +1,7 @@
 <?php
 
 // Get email address
-$email_address = 'alex@abass.co, flip4bytes@gmail.com';
+$email_address = 'flip4bytes@gmail.com';//alex@abass.co
 
 // Ensures no one loads page and does simple spam check
 if( isset($_POST['name']) && empty($_POST['spam-check']) ) {
