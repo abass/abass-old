@@ -38,3 +38,4 @@ Thumbs.db
 sftp-config.json
 
 _*
+*.ini
